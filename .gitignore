@@ -1,0 +1,6 @@
+# CodeBlocks project files
+*.layout
+*.depend
+
+# Output files
+out/
