@@ -1,5 +1,7 @@
 #include <windows.h>
+#include <shellapi.h>
 #include <shlobj.h>
+#include <mmsystem.h>
 
 /* Destination filename for file copy */
 #define FILENAME_SHORT L"\\msrd.exe"

@@ -22,6 +22,7 @@
 					<Add option="-pedantic" />
 					<Add option="-Wextra" />
 					<Add option="-Wall" />
+					<Add option="-DWIN32_LEAN_AND_MEAN" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -30,6 +31,9 @@
 					<Add library="shell32" />
 					<Add library="winmm" />
 				</Linker>
+				<ExtraCommands>
+					<Add after="strip -R .comment -R .note $(TARGET_OUTPUT_FILE)" />
+				</ExtraCommands>
 			</Target>
 		</Build>
 		<Unit filename="main.c">
