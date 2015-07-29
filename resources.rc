@@ -3,7 +3,7 @@
 #define COMPANY "Microsaft"
 #define PRODUCT "Rubber Duck"
 #define VERSION_NUMBER 0,0,0,1
-#define VERSION_STRING "0.1"
+#define VERSION_STRING "0.0.0.1"
 
 VS_VERSION_INFO VERSIONINFO
 FILEVERSION VERSION_NUMBER
@@ -16,7 +16,7 @@ FILESUBTYPE    	VFT2_UNKNOWN
 BEGIN
     BLOCK "StringFileInfo"
     BEGIN
-        BLOCK "040904E4"
+        BLOCK "040904E4" /* 0x0409 1252 = en_US */
         BEGIN
             VALUE "FileDescription", COMPANY " " PRODUCT " service"
             VALUE "CompanyName", COMPANY
@@ -34,4 +34,5 @@ BEGIN
     END
 END
 
+icon ICON "icon.ico"
 sound WAVE "sound.wav"
