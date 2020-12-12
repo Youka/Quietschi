@@ -36,16 +36,13 @@
 				</ExtraCommands>
 			</Target>
 		</Build>
-		<Unit filename="main.c">
+		<Unit filename="src/main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="resources.rc">
+		<Unit filename="src/resources.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
 		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
 			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>
